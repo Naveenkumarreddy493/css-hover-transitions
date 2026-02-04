@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Circle + Bounce</title>
+<title>Transitions</title>
 <style>
 *{
     margin:0;
@@ -17,24 +17,18 @@ body{
     align-items:center;
     background:#f2f2f2;
 }
-
-/* Circular path */
 .circle{
     width:400px;
     height:400px;
     position:relative;
     animation: rotate 6s linear infinite;
 }
-
-/* Ball wrapper */
 .ball-wrapper{
     position:absolute;
     top:0;
     left:50%;
     transform: translateX(-50%);
 }
-
-/* Ball */
 .ball{
     width:80px;
     height:80px;
@@ -45,8 +39,6 @@ body{
     width:100%;
     height:100%;
 }
-
-/* Rotation */
 @keyframes rotate{
     from{
         transform: rotate(0deg);
@@ -55,8 +47,6 @@ body{
         transform: rotate(360deg);
     }
 }
-
-/* Bounce */
 @keyframes bounce{
     0%{
         transform: translateY(0);
@@ -82,3 +72,4 @@ body{
 
 </body>
 </html>
+
